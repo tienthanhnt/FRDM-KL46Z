@@ -1,0 +1,283 @@
+###############################################################################
+#
+# IAR ELF Linker V8.30.2.160/W32 for ARM                  04/Mar/2020  15:51:17
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Tai lieu C C++\30 Hoc lap trinh
+#        nhung\Project_IAR\Systic_polling_example\project\Debug\Exe\sysTick.out
+#    Map file     =  
+#        C:\Tai lieu C C++\30 Hoc lap trinh
+#        nhung\Project_IAR\Systic_polling_example\project\Debug\List\sysTick.map
+#    Command line =  
+#        -f C:\Users\Dicom\AppData\Local\Temp\EW5ECD.tmp ("C:\Tai lieu C C++\30
+#        Hoc lap trinh
+#        nhung\Project_IAR\Systic_polling_example\project\Debug\Obj\startup_MKL46Z4.o"
+#        "C:\Tai lieu C C++\30 Hoc lap trinh
+#        nhung\Project_IAR\Systic_polling_example\project\Debug\Obj\system_MKL46Z4.o"
+#        "C:\Tai lieu C C++\30 Hoc lap trinh
+#        nhung\Project_IAR\Systic_polling_example\project\Debug\Obj\sysTick.o"
+#        --no_out_extension -o "C:\Tai lieu C C++\30 Hoc lap trinh
+#        nhung\Project_IAR\Systic_polling_example\project\Debug\Exe\sysTick.out"
+#        --map "C:\Tai lieu C C++\30 Hoc lap trinh
+#        nhung\Project_IAR\Systic_polling_example\project\Debug\List\sysTick.map"
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.1\arm\config\linker\NXP\MKL46Z256xxx4.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x3ff] |
+                [from 0x410 to 0x3'ffff] { ro };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block HEAP with size = 4K, alignment = 8 { };
+"P3":  place in [from 0x1fff'e000 to 0x1fff'ffff] |
+                [from 0x2000'0000 to 0x2000'5fff] {
+          rw, block CSTACK, block HEAP };
+"P5":  place in [from 0x400 to 0x40f] { section FlashConfig };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  ro section application_specific_ro  in "P2|P4"
+  rw section application_specific_rw  in "P2|P4"
+
+
+  Section            Kind         Address   Size  Object
+  -------            ----         -------   ----  ------
+"A0":                                       0xc0
+  .intvec            ro code          0x0   0xc0  startup_MKL46Z4.o [1]
+                                   - 0xc0   0xc0
+
+"P1", part 1 of 2:                           0x8
+  .rodata            const           0xc0    0x0  copy_init3.o [3]
+  Initializer bytes  const           0xc0    0x8  <for P3 s0>
+                                   - 0xc8    0x8
+
+"P5":                                       0x10
+  FlashConfig        ro code        0x400   0x10  startup_MKL46Z4.o [1]
+                                  - 0x410   0x10
+
+"P1", part 2 of 2:                         0x5c4
+  .text              ro code        0x410  0x186  xprintftiny.o [2]
+  .text              ro code        0x596   0xae  I32DivModFast.o [3]
+  .text              ro code        0x644   0x10  strlen.o [3]
+  .text              ro code        0x654    0x2  IntDivZer.o [3]
+  .text              ro code        0x656    0x2  startup_MKL46Z4.o [1]
+  .text              ro code        0x658   0xb8  sysTick.o [1]
+  .text              ro code        0x710   0x28  printf.o [2]
+  .text              ro code        0x738   0x80  iarttio.o [4]
+  .text              ro code        0x7b8    0x8  XShttio.o [2]
+  .text              ro code        0x7c0   0x30  copy_init3.o [3]
+  .text              ro code        0x7f0   0x28  data_init.o [3]
+  .text              ro code        0x818   0x24  startup_MKL46Z4.o [1]
+  .text              ro code        0x83c   0x22  iarwrite.o [4]
+  .iar.init_table    const          0x860   0x14  - Linker created -
+  .text              ro code        0x874   0x20  iarwstd.o [4]
+  .text              ro code        0x894    0x2  startup_MKL46Z4.o [1]
+  .text              ro code        0x898   0x1e  cmain.o [3]
+  .text              ro code        0x8b6    0x4  low_level_init.o [2]
+  .text              ro code        0x8ba    0x8  exit.o [2]
+  .text              ro code        0x8c2    0x2  startup_MKL46Z4.o [1]
+  .text              ro code        0x8c4    0xa  cexit.o [3]
+  .text              ro code        0x8ce    0x2  startup_MKL46Z4.o [1]
+  .text              ro code        0x8d0   0x14  exit.o [4]
+  .text              ro code        0x8e4   0x1e  putchar.o [2]
+  .text              ro code        0x902   0x10  write.o [4]
+  .text              ro code        0x912   0x1e  dwrite.o [4]
+  .text              ro code        0x930   0x16  xprout.o [2]
+  .text              ro code        0x946    0x2  startup_MKL46Z4.o [1]
+  .rodata            const          0x948    0xc  sysTick.o [1]
+  .text              ro code        0x954    0xc  system_MKL46Z4.o [1]
+  .text              ro code        0x960    0xc  cstartup_M.o [3]
+  .text              ro code        0x96c    0x8  startup_MKL46Z4.o [1]
+  .text              ro code        0x974    0x8  startup_MKL46Z4.o [1]
+  .text              ro code        0x97c    0x8  startup_MKL46Z4.o [1]
+  .text              ro code        0x984    0x8  startup_MKL46Z4.o [1]
+  .text              ro code        0x98c    0x8  startup_MKL46Z4.o [1]
+  .text              ro code        0x994    0x8  startup_MKL46Z4.o [1]
+  .text              ro code        0x99c    0x8  startup_MKL46Z4.o [1]
+  .text              ro code        0x9a4    0x8  startup_MKL46Z4.o [1]
+  .text              ro code        0x9ac    0x8  startup_MKL46Z4.o [1]
+  .text              ro code        0x9b4    0x8  startup_MKL46Z4.o [1]
+  .text              ro code        0x9bc    0x8  startup_MKL46Z4.o [1]
+  .text              ro code        0x9c4    0x8  startup_MKL46Z4.o [1]
+  .text              ro code        0x9cc    0x8  startup_MKL46Z4.o [1]
+                                  - 0x9d4  0x5c4
+
+"P3", part 1 of 2:                           0x8
+  P3 s0                       0x1fff'e000    0x8  <Init block>
+    .data            inited   0x1fff'e000    0x8  XShttio.o [2]
+                            - 0x1fff'e008    0x8
+
+"P3", part 2 of 2:                         0x800
+  CSTACK                      0x1fff'e008  0x800  <Block>
+    CSTACK           uninit   0x1fff'e008  0x800  <Block tail>
+                            - 0x1fff'e808  0x800
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+         0xc8        0x3ff     0x338
+        0x9d4     0x3'ffff  0x3'f62c
+  0x1fff'e808  0x1fff'ffff    0x17f8
+  0x2000'0000  0x2000'5fff    0x6000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy (__iar_copy_init3)
+    1 source range, total size 0x8:
+                 0xc0   0x8
+    1 destination range, total size 0x8:
+          0x1fff'e000   0x8
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module             ro code  ro data  rw data
+    ------             -------  -------  -------
+command line/config:
+    --------------------------------------------
+    Total:
+
+C:\Tai lieu C C++\30 Hoc lap trinh nhung\Project_IAR\Systic_polling_example\project\Debug\Obj: [1]
+    startup_MKL46Z4.o      358
+    sysTick.o              184       12
+    system_MKL46Z4.o        12
+    --------------------------------------------
+    Total:                 554       12
+
+dl6M_tln.a: [2]
+    XShttio.o                8        8        8
+    exit.o                   8
+    low_level_init.o         4
+    printf.o                40
+    putchar.o               30
+    xprintftiny.o          390
+    xprout.o                22
+    --------------------------------------------
+    Total:                 502        8        8
+
+rt6M_tl.a: [3]
+    I32DivModFast.o        174
+    IntDivZer.o              2
+    cexit.o                 10
+    cmain.o                 30
+    copy_init3.o            48
+    cstartup_M.o            12
+    data_init.o             40
+    strlen.o                16
+    --------------------------------------------
+    Total:                 332
+
+shb_l.a: [4]
+    dwrite.o                30
+    exit.o                  20
+    iarttio.o              128
+    iarwrite.o              34
+    iarwstd.o               32
+    write.o                 16
+    --------------------------------------------
+    Total:                 260
+
+    Gaps                     2        2
+    Linker created                   20    2 048
+------------------------------------------------
+    Grand Total:         1 650       42    2 056
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base         0x860          --   Gb  - Linker created -
+.iar.init_table$$Limit        0x874          --   Gb  - Linker created -
+?main                         0x899         Code  Gb  cmain.o [3]
+CSTACK$$Base            0x1fff'e008          --   Gb  - Linker created -
+CSTACK$$Limit           0x1fff'e808          --   Gb  - Linker created -
+Region$$Table$$Base           0x860          --   Gb  - Linker created -
+Region$$Table$$Limit          0x874          --   Gb  - Linker created -
+SystemInit                    0x955    0x8  Code  Gb  system_MKL46Z4.o [1]
+_PrintfTiny                   0x42b  0x16c  Code  Gb  xprintftiny.o [2]
+_Prout                        0x931   0x16  Code  Gb  xprout.o [2]
+__Vectors                       0x0          --   Gb  startup_MKL46Z4.o [1]
+__Vectors_End                  0xc0         Data  Gb  startup_MKL46Z4.o [1]
+__Vectors_Size {Abs}           0xc0          --   Gb  startup_MKL46Z4.o [1]
+__aeabi_idiv0                 0x655         Code  Gb  IntDivZer.o [3]
+__aeabi_uidiv                 0x597         Code  Gb  I32DivModFast.o [3]
+__aeabi_uidivmod              0x597         Code  Gb  I32DivModFast.o [3]
+__cmain                       0x899         Code  Gb  cmain.o [3]
+__dwrite                      0x913   0x1e  Code  Gb  dwrite.o [4]
+__exit                        0x8d1   0x14  Code  Gb  exit.o [4]
+__iar_close_ttio              0x739   0x2e  Code  Gb  iarttio.o [4]
+__iar_copy_init3              0x7c1   0x30  Code  Gb  copy_init3.o [3]
+__iar_data_init3              0x7f1   0x28  Code  Gb  data_init.o [3]
+__iar_get_ttio                0x769   0x4c  Code  Gb  iarttio.o [4]
+__iar_lookup_ttioh            0x7b9    0x8  Code  Gb  XShttio.o [2]
+__iar_program_start           0x961         Code  Gb  cstartup_M.o [3]
+__iar_sh_stdout               0x875   0x20  Code  Gb  iarwstd.o [4]
+__iar_sh_write                0x83d   0x22  Code  Gb  iarwrite.o [4]
+__iar_ttio_handles      0x1fff'e000    0x8  Data  Lc  XShttio.o [2]
+__low_level_init              0x8b7    0x4  Code  Gb  low_level_init.o [2]
+__vector_table                  0x0         Data  Gb  startup_MKL46Z4.o [1]
+__vector_table_0x1c            0x1c         Data  Gb  startup_MKL46Z4.o [1]
+__write                       0x903   0x10  Code  Gb  write.o [4]
+_call_main                    0x8a5         Code  Gb  cmain.o [3]
+_exit                         0x8c5         Code  Gb  cexit.o [3]
+_main                         0x8b3         Code  Gb  cmain.o [3]
+exit                          0x8bb    0x8  Code  Gb  exit.o [2]
+initLed                       0x671   0x36  Code  Gb  sysTick.o [1]
+init_sysTick                  0x659   0x18  Code  Gb  sysTick.o [1]
+main                          0x6a7   0x3c  Code  Gb  sysTick.o [1]
+out                           0x411   0x1a  Code  Lc  xprintftiny.o [2]
+printf                        0x711   0x28  Code  Gb  printf.o [2]
+putchar                       0x8e5   0x1e  Code  Gb  putchar.o [2]
+strlen                        0x645   0x10  Code  Gb  strlen.o [3]
+
+
+[1] = C:\Tai lieu C C++\30 Hoc lap trinh nhung\Project_IAR\Systic_polling_example\project\Debug\Obj
+[2] = dl6M_tln.a
+[3] = rt6M_tl.a
+[4] = shb_l.a
+
+  1 650 bytes of readonly  code memory
+     42 bytes of readonly  data memory
+  2 056 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
