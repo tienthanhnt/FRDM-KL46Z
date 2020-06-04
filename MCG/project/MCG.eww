@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\mcg.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\..\TPM_chuan\project\TPM.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\..\UART_chuan\project\uart_chuan.ewp</path>
+    </project>
+    <batchBuild />
+</workspace>

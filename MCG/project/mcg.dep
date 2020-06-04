@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>929793611</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\source\main.c</file>
+            <file>$PROJ_DIR$\..\MKL46Z\startup_MKL46Z4.s</file>
+            <file>$PROJ_DIR$\..\MKL46Z\system_MKL46Z4.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_MKL46Z4.o</file>
+            <file>$PROJ_DIR$\..\MKL46Z\system_MKL46Z4.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_MKL46Z4.__cstat.et</file>
+            <file>$PROJ_DIR$\..\CMSIS\Include\core_cmInstr.h</file>
+            <file>$PROJ_DIR$\Debug\List\mcg.map</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\config\linker\NXP\MKL46Z256xxx4.icf</file>
+            <file>$PROJ_DIR$\..\CMSIS\Include\core_cm0plus.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_MKL46Z4.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\mcg.out</file>
+            <file>$PROJ_DIR$\..\MKL46Z\MKL46Z4_features.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_MKL46Z4.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\..\MKL46Z\fsl_device_registers.h</file>
+            <file>$PROJ_DIR$\..\MKL46Z\MKL46Z4.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\Include\core_cmFunc.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 23 13</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\source\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 30 20 9 18 15 10 27 6 12 5 28 31 2 22</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 31 20 9 15 22 2 10 30 12 18 27 6 5 28</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\MKL46Z\startup_MKL46Z4.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\MKL46Z\system_MKL46Z4.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 3</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 26</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 9 18 15 10 27 6 29 30 20 12 5 28 31 2 24</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 15 31 20 9 10 24 29 18 27 6 30 2 12 5 28</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\mcg.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 13</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 19 8 21 3 7 16 17 32</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

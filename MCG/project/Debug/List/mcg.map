@@ -1,0 +1,234 @@
+###############################################################################
+#
+# IAR ELF Linker V8.30.2.160/W32 for ARM                  01/May/2020  21:03:47
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        B:\Tai lieu C C++\30 Hoc lap trinh
+#        nhung\Project_IAR\MCG\project\Debug\Exe\mcg.out
+#    Map file     =  
+#        B:\Tai lieu C C++\30 Hoc lap trinh
+#        nhung\Project_IAR\MCG\project\Debug\List\mcg.map
+#    Command line =  
+#        -f C:\Users\Dicom\AppData\Local\Temp\EWAF84.tmp ("B:\Tai lieu C C++\30
+#        Hoc lap trinh nhung\Project_IAR\MCG\project\Debug\Obj\main.o" "B:\Tai
+#        lieu C C++\30 Hoc lap trinh
+#        nhung\Project_IAR\MCG\project\Debug\Obj\startup_MKL46Z4.o" "B:\Tai
+#        lieu C C++\30 Hoc lap trinh
+#        nhung\Project_IAR\MCG\project\Debug\Obj\system_MKL46Z4.o"
+#        --no_out_extension -o "B:\Tai lieu C C++\30 Hoc lap trinh
+#        nhung\Project_IAR\MCG\project\Debug\Exe\mcg.out" --map "B:\Tai lieu C
+#        C++\30 Hoc lap trinh nhung\Project_IAR\MCG\project\Debug\List\mcg.map"
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.1\arm\config\linker\NXP\MKL46Z256xxx4.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x3ff] |
+                [from 0x410 to 0x3'ffff] { ro };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block HEAP with size = 4K, alignment = 8 { };
+"P3":  place in [from 0x1fff'e000 to 0x1fff'ffff] |
+                [from 0x2000'0000 to 0x2000'5fff] {
+          rw, block CSTACK, block HEAP };
+"P5":  place in [from 0x400 to 0x40f] { section FlashConfig };
+
+No sections matched the following patterns:
+
+  ro section application_specific_ro  in "P2|P4"
+  rw section application_specific_rw  in "P2|P4"
+
+
+  Section          Kind         Address   Size  Object
+  -------          ----         -------   ----  ------
+"A0":                                     0xc0
+  .intvec          ro code          0x0   0xc0  startup_MKL46Z4.o [1]
+                                 - 0xc0   0xc0
+
+"P1", part 1 of 2:                         0x0
+  .rodata          const           0xc0    0x0  zero_init3.o [3]
+
+"P5":                                     0x10
+  FlashConfig      ro code        0x400   0x10  startup_MKL46Z4.o [1]
+                                - 0x410   0x10
+
+"P1", part 2 of 2:                       0x29c
+  .text            ro code        0x410  0x134  main.o [1]
+  .text            ro code        0x544   0x3c  zero_init3.o [3]
+  .text            ro code        0x580   0x28  data_init.o [3]
+  .text            ro code        0x5a8   0x24  startup_MKL46Z4.o [1]
+  .iar.init_table  const          0x5cc   0x10  - Linker created -
+  .text            ro code        0x5dc   0x1e  cmain.o [3]
+  .text            ro code        0x5fa    0x4  low_level_init.o [2]
+  .text            ro code        0x5fe    0x8  exit.o [2]
+  .text            ro code        0x606    0x2  startup_MKL46Z4.o [1]
+  .text            ro code        0x608    0xa  cexit.o [3]
+  .text            ro code        0x612    0x2  startup_MKL46Z4.o [1]
+  .text            ro code        0x614   0x14  exit.o [4]
+  .text            ro code        0x628    0xc  system_MKL46Z4.o [1]
+  .text            ro code        0x634    0xc  cstartup_M.o [3]
+  .text            ro code        0x640    0x8  startup_MKL46Z4.o [1]
+  .text            ro code        0x648    0x8  startup_MKL46Z4.o [1]
+  .text            ro code        0x650    0x8  startup_MKL46Z4.o [1]
+  .text            ro code        0x658    0x8  startup_MKL46Z4.o [1]
+  .text            ro code        0x660    0x8  startup_MKL46Z4.o [1]
+  .text            ro code        0x668    0x8  startup_MKL46Z4.o [1]
+  .text            ro code        0x670    0x8  startup_MKL46Z4.o [1]
+  .text            ro code        0x678    0x8  startup_MKL46Z4.o [1]
+  .text            ro code        0x680    0x8  startup_MKL46Z4.o [1]
+  .text            ro code        0x688    0x8  startup_MKL46Z4.o [1]
+  .text            ro code        0x690    0x8  startup_MKL46Z4.o [1]
+  .text            ro code        0x698    0x8  startup_MKL46Z4.o [1]
+  .text            ro code        0x6a0    0x8  startup_MKL46Z4.o [1]
+  .text            ro code        0x6a8    0x2  startup_MKL46Z4.o [1]
+  .text            ro code        0x6aa    0x2  startup_MKL46Z4.o [1]
+                                - 0x6ac  0x29c
+
+"P3", part 1 of 2:                         0x4
+  .bss             zero     0x1fff'e000    0x4  main.o [1]
+                          - 0x1fff'e004    0x4
+
+"P3", part 2 of 2:                       0x800
+  CSTACK                    0x1fff'e008  0x800  <Block>
+    CSTACK         uninit   0x1fff'e008  0x800  <Block tail>
+                          - 0x1fff'e808  0x800
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+         0xc0        0x3ff     0x340
+        0x6ac     0x3'ffff  0x3'f954
+  0x1fff'e004  0x1fff'e007       0x4
+  0x1fff'e808  0x1fff'ffff    0x17f8
+  0x2000'0000  0x2000'5fff    0x6000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x4:
+          0x1fff'e000   0x4
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module             ro code  ro data  rw data
+    ------             -------  -------  -------
+command line/config:
+    --------------------------------------------
+    Total:
+
+B:\Tai lieu C C++\30 Hoc lap trinh nhung\Project_IAR\MCG\project\Debug\Obj: [1]
+    main.o                 308                 4
+    startup_MKL46Z4.o      356
+    system_MKL46Z4.o        12
+    --------------------------------------------
+    Total:                 676                 4
+
+dl6M_tln.a: [2]
+    exit.o                   8
+    low_level_init.o         4
+    --------------------------------------------
+    Total:                  12
+
+rt6M_tl.a: [3]
+    cexit.o                 10
+    cmain.o                 30
+    cstartup_M.o            12
+    data_init.o             40
+    zero_init3.o            60
+    --------------------------------------------
+    Total:                 152
+
+shb_l.a: [4]
+    exit.o                  20
+    --------------------------------------------
+    Total:                  20
+
+    Linker created                   16    2 048
+------------------------------------------------
+    Grand Total:           860       16    2 052
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+.iar.init_table$$Base         0x5cc         --   Gb  - Linker created -
+.iar.init_table$$Limit        0x5dc         --   Gb  - Linker created -
+?main                         0x5dd        Code  Gb  cmain.o [3]
+CSTACK$$Base            0x1fff'e008         --   Gb  - Linker created -
+CSTACK$$Limit           0x1fff'e808         --   Gb  - Linker created -
+Region$$Table$$Base           0x5cc         --   Gb  - Linker created -
+Region$$Table$$Limit          0x5dc         --   Gb  - Linker created -
+SysTick_Handler               0x4ef   0xe  Code  Gb  main.o [1]
+SystemInit                    0x629   0x8  Code  Gb  system_MKL46Z4.o [1]
+__Vectors                       0x0         --   Gb  startup_MKL46Z4.o [1]
+__Vectors_End                  0xc0        Data  Gb  startup_MKL46Z4.o [1]
+__Vectors_Size {Abs}           0xc0         --   Gb  startup_MKL46Z4.o [1]
+__cmain                       0x5dd        Code  Gb  cmain.o [3]
+__exit                        0x615  0x14  Code  Gb  exit.o [4]
+__iar_data_init3              0x581  0x28  Code  Gb  data_init.o [3]
+__iar_program_start           0x635        Code  Gb  cstartup_M.o [3]
+__iar_zero_init3              0x545  0x3c  Code  Gb  zero_init3.o [3]
+__low_level_init              0x5fb   0x4  Code  Gb  low_level_init.o [2]
+__vector_table                  0x0        Data  Gb  startup_MKL46Z4.o [1]
+__vector_table_0x1c            0x1c        Data  Gb  startup_MKL46Z4.o [1]
+_call_main                    0x5e9        Code  Gb  cmain.o [3]
+_exit                         0x609        Code  Gb  cexit.o [3]
+_main                         0x5f7        Code  Gb  cmain.o [3]
+exit                          0x5ff   0x8  Code  Gb  exit.o [2]
+fei_fee                       0x46f  0x52  Code  Gb  main.o [1]
+init_SysTick                  0x461   0xe  Code  Gb  main.o [1]
+init_led                      0x411  0x40  Code  Gb  main.o [1]
+main                          0x4c1  0x2e  Code  Gb  main.o [1]
+my_delay                      0x451  0x10  Code  Gb  main.o [1]
+tick                    0x1fff'e000   0x4  Data  Gb  main.o [1]
+
+
+[1] = B:\Tai lieu C C++\30 Hoc lap trinh nhung\Project_IAR\MCG\project\Debug\Obj
+[2] = dl6M_tln.a
+[3] = rt6M_tl.a
+[4] = shb_l.a
+
+    860 bytes of readonly  code memory
+     16 bytes of readonly  data memory
+  2 052 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

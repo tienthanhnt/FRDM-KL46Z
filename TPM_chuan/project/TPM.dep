@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>761489806</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\source\tpm_ex.c</file>
+            <file>$PROJ_DIR$\..\MKL46Z\startup_MKL46Z4.s</file>
+            <file>$PROJ_DIR$\..\MKL46Z\system_MKL46Z4.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\tpm_ex.pbi</file>
+            <file>$PROJ_DIR$\Debug\Exe\TPM.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\TPM.pbd</file>
+            <file>$PROJ_DIR$\..\CMSIS\Include\core_cmFunc.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\Include\core_cmInstr.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+            <file>$PROJ_DIR$\..\MKL46Z\MKL46Z4.h</file>
+            <file>$PROJ_DIR$\..\MKL46Z\fsl_device_registers.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_MKL46Z4.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\..\MKL46Z\system_MKL46Z4.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_MKL46Z4.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_MKL46Z4.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\config\linker\NXP\MKL46Z256xxx4.icf</file>
+            <file>$PROJ_DIR$\Debug\Obj\tpm_ex.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\..\..\UART_chuan\source\uart_code.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\Include\core_cm0plus.h</file>
+            <file>$PROJ_DIR$\..\MKL46Z\MKL46Z4_features.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\tpm_ex.o</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\Debug\List\TPM.map</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_MKL46Z4.o</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 32 4</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\source\tpm_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 30</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 3</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11 28 8 16 26 25 23 9 7 27 15 6 17</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 16 17 7 9 26 8 28 23 27 15 11 6 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\MKL46Z\startup_MKL46Z4.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\MKL46Z\system_MKL46Z4.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 33</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 18</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 8 16 26 25 23 9 12 11 28 7 27 15 6 17 29</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 26 6 28 8 25 29 12 16 23 9 11 17 7 27 15</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\TPM.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 32</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 20 14 33 30 31 10 22 13</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\source\tpm_ex.c</file>
+            <file>$PROJ_DIR$\..\MKL46Z\startup_MKL46Z4.s</file>
+            <file>$PROJ_DIR$\..\MKL46Z\system_MKL46Z4.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\MKL46Z\fsl_device_registers.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\Release\Exe\TPM.out</file>
+            <file>$PROJ_DIR$\Release\Obj\system_MKL46Z4.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\TPM.pbd</file>
+            <file>$PROJ_DIR$\Release\Obj\tpm_ex.o</file>
+            <file>$PROJ_DIR$\Release\Obj\system_MKL46Z4.o</file>
+            <file>$PROJ_DIR$\Release\Obj\startup_MKL46Z4.o</file>
+            <file>$PROJ_DIR$\Release\Obj\tpm_ex.pbi</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\source\tpm_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 13</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 16</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\MKL46Z\startup_MKL46Z4.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 15</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\MKL46Z\system_MKL46Z4.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 6 8 9 3 7 4 5</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

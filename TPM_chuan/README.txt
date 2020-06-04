@@ -1,0 +1,1 @@
+Project sử dụng module TPM để điều chỉnh độ sáng cho đèn led đỏ trên board MKL46Z. Độ sáng của đèn led sẽ tăng dần.
